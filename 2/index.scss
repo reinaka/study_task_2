@@ -5,10 +5,12 @@
 @import './styles/input';
 
 main {
-    box-sizing: border-box;
-    padding: 40px;
+    @include main;
     @include centered;
-    width: 100dvw;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+}
+
+* {
+    box-sizing: border-box;
 }
 

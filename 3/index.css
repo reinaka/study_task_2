@@ -1,0 +1,60 @@
+@import '../normalize.css';
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100dvw;
+  font-family: Arial, Helvetica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px 20px;
+}
+@media (min-width: 480px) {
+  main {
+    padding: 40px 40px;
+  }
+}
+
+.heading {
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  padding: 0;
+}
+.list li {
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 8px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search {
+  padding: 4px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  outline-offset: 0;
+}
