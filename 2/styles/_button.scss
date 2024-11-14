@@ -1,0 +1,19 @@
+.button__wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    background: blue;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    max-width: 220px;
+    padding: 12px 24px;
+}
+
+.button-inactive {
+    cursor: default;
+    background-color: rgb(222, 222, 222);
+    color: rgb(146, 145, 145);
+}

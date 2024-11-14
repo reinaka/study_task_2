@@ -1,0 +1,43 @@
+.input {
+    padding: 20px 50px 20px 20px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    background: #fdf1d7;
+    flex: 1;
+}
+
+.input::after {
+    content: "aaa";
+}
+
+.input__label {
+    font-weight: bold;
+}
+
+.input__label::after {
+    content: "*";
+    color: red;
+    padding-left: 4px;
+}
+
+.input--error {
+    border: 1px solid red;
+}
+
+.input__wrapper {
+    position: relative;
+    display: flex;
+}
+
+.input__icon {
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: none;
+}
+
+.icon--visible {
+    display: block;
+}

@@ -1,0 +1,9 @@
+@mixin centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin uppercase {
+    text-transform: uppercase;
+}

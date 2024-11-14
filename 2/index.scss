@@ -1,0 +1,14 @@
+@import '../normalize.css';
+@import '../mixins';
+@import './styles/form';
+@import './styles/button';
+@import './styles/input';
+
+main {
+    box-sizing: border-box;
+    padding: 40px;
+    @include centered;
+    width: 100dvw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
