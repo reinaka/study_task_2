@@ -1,0 +1,41 @@
+@import '../normalize.css';
+.currency__wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px 0px;
+  width: 140px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.currency__title {
+  text-transform: uppercase;
+  color: gray;
+}
+
+main {
+  box-sizing: border-box;
+  width: 100dvw;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 40px;
+}
+
+.converter__wrapper {
+  padding: 30px;
+  background: linear-gradient(#fafafa, #c2bfbf);
+  border-radius: 20px;
+  box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.heading {
+  margin: 0;
+}/*# sourceMappingURL=index.css.map */

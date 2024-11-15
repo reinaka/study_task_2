@@ -1,0 +1,27 @@
+@import '../normalize.css';
+@import '../mixins';
+@import './styles/currency';
+
+main {
+    @include main;
+    padding: 40px;
+}
+
+.converter__wrapper {
+    padding: 30px;
+    background: linear-gradient(#fafafa, #c2bfbf);
+    border-radius: 20px;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.5)
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.heading {
+    margin: 0;
+}
