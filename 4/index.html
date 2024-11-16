@@ -3,53 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>Converter Currency</title>
 </head>
 <body>
     <main>
       <div class="converter__wrapper">
-        <h1 class="heading">Exchange rate in internet bank</h1>
-        <section>
-          <h2>Currency</h2>
-          <div class="container">
-            <div class="currency__wrapper currency__wrapper--1">
-              <span class="currency__title"></span>
-              <span class="currency__rate"></span>
-            </div>
-
-            <div class="currency__wrapper currency__wrapper--2">
-              <span class="currency__title"></span>
-              <span class="currency__rate"></span>
-            </div>
-
-            <div class="currency__wrapper currency__wrapper--3">
-              <span class="currency__title"></span>
-              <span class="currency__rate"></span>
-            </div>
-
-            <div class="currency__wrapper currency__wrapper--4">
-              <span class="currency__title"></span>
-              <span class="currency__rate"></span>
-            </div>
-
-            <div class="currency__wrapper currency__wrapper--5">
-              <span class="currency__title"></span>
-              <span class="currency__rate"></span>
-            </div>
-
-            <div class="currency__wrapper currency__wrapper--6">
-              <span class="currency__title"></span>
-              <span class="currency__rate"></span>
-            </div>
-        </section>
-        <section>
-
-        </section>
-        <div>All courses</div>
+        <div class="block--top">
+          <h1 class="heading">Exchange rate in internet bank</h1>
+          <p class="text--top">
+            <span>Updates every 15 minutes, MSC <time class="datetime"></time></span>
+          </p>
+        </div>
+        <h2 class="heading--2">Currency</h2>
+        <div class="mainContent__wrapper">
+          <section class="currencies__container"></section>
+          <svg class="icon" viewBox="0 0 24 24" fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier"> <defs> <style>.cls-1{fill:none;stroke:#020202;stroke-linecap:square;stroke-miterlimit:10;stroke-width:1.91px;}</style> </defs> 
+              <g id="bank"> 
+                <polygon class="cls-1" points="22.5 6.27 22.5 9.14 1.5 9.14 1.5 6.27 12 1.5 22.5 6.27"></polygon> 
+                <rect class="cls-1" x="1.5" y="18.68" width="21" height="3.82"></rect> 
+                <line class="cls-1" x1="3.41" y1="9.14" x2="3.41" y2="18.68"></line> 
+                <line class="cls-1" x1="9.14" y1="9.14" x2="9.14" y2="18.68"></line> 
+                <line class="cls-1" x1="14.86" y1="9.14" x2="14.86" y2="18.68"></line> 
+                <line class="cls-1" x1="20.59" y1="9.14" x2="20.59" y2="18.68"></line> 
+              </g> 
+            </g>
+          </svg>
+        </div>
+        <div class="rates rates--all" role="button">All courses</div>
+        <div class="rates rates--hide none" role="button">Hide all courses</div>
       </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="./script.js" type="module" async></script>
 </body>
 </html>

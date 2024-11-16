@@ -4,38 +4,134 @@
   flex-direction: row;
   gap: 10px;
   padding: 10px 0px;
-  width: 140px;
+  width: 30%;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 500;
+}
+@media (min-width: 540px) {
+  .currency__wrapper {
+    width: 40%;
+  }
+}
+@media (min-width: 740px) {
+  .currency__wrapper {
+    width: 140px;
+  }
 }
 
 .currency__title {
   text-transform: uppercase;
-  color: gray;
+  color: #676161;
+}
+
+* {
+  margin: 0;
 }
 
 main {
   box-sizing: border-box;
   width: 100dvw;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 40px;
+  padding: 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@media (min-width: 540px) {
+  main {
+    padding: 40px;
+  }
 }
 
 .converter__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   padding: 30px;
-  background: linear-gradient(#fafafa, #c2bfbf);
+  background: linear-gradient(#fafafa, #bab0af);
   border-radius: 20px;
   box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.container {
-  width: 50%;
+.mainContent__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.currencies__container {
+  max-width: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media (min-width: 740px) {
+  .currencies__container {
+    max-width: 460px;
+  }
+}
+
+.currencies__container--all {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
 }
 
+.block--top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+@media (min-width: 860px) {
+  .block--top {
+    flex-direction: row;
+  }
+}
+
 .heading {
   margin: 0;
+  font-size: 28px;
+}
+
+.heading--2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.text--top {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 12px;
+}
+
+.rates {
+  cursor: pointer;
+}
+
+.rates--all {
+  color: #fafafa;
+}
+
+.rates--hide {
+  color: #676161;
+}
+
+.icon {
+  display: none;
+  width: 100px;
+  height: auto;
+}
+@media (min-width: 740px) {
+  .icon {
+    display: block;
+  }
+}
+
+.none {
+  display: none;
 }/*# sourceMappingURL=index.css.map */
