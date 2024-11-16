@@ -4,16 +4,27 @@
 }
 
 .button {
-    background: blue;
-    color: #fff;
+    background: linear-gradient(0deg, rgba(6,14,131,1) 0%, rgba(12,25,180,1) 100%);
     border: none;
+    color: #fff;
     border-radius: 8px;
     max-width: 220px;
     padding: 12px 24px;
+    cursor: pointer;
 }
 
-.button-inactive {
+.button:hover {
+    background: rgb(0,3,255);
+    background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
+}
+
+.button:active {
+    background: rgb(54, 160, 79);
+    background: linear-gradient(0deg, rgba(54, 160, 79) 0%, rgb(170, 218, 181) 100%);
+}
+
+.button-inactive, .button-inactive:hover{
     cursor: default;
-    background-color: rgb(222, 222, 222);
+    background: rgb(222, 222, 222);
     color: rgb(146, 145, 145);
 }

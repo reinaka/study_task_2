@@ -30,7 +30,6 @@ function startValidation() {
 };
 
 function checkInputValidity(inputElement) {
-    console.log(inputElement);
   if (inputElement.validity.patternMismatch) {
     inputElement.setCustomValidity(inputElement.dataset.errorMessage);
   } else {
