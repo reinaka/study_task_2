@@ -4,9 +4,9 @@ function sortList() {
     const ul = document.getElementById("list");
     const li = ul.getElementsByTagName('li');
 
-    for (i = 0; i < li.length; i++) {
+    for (let i = 0; i < li.length; i++) {
         let current = li[i];
-        txtValue = current.textContent || current.innerText;
+        let txtValue = current.textContent || current.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
             li[i].style.display = "";
         } else {
@@ -14,3 +14,6 @@ function sortList() {
         }
     }
 }
+
+const search = document.getElementById("search");
+search.onkeyup = sortList;
