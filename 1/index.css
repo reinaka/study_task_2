@@ -56,11 +56,16 @@ main {
   text-align: center;
 }
 
-.image {
+.image__wrapper {
   max-width: 200px;
-  height: auto;
-  display: block;
+  max-height: 130px;
+  overflow: hidden;
   margin: 0 auto;
+}
+
+.image {
+  width: 100%;
+  height: auto;
 }
 
 .slider__wrapper {
