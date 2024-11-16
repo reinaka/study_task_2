@@ -1,0 +1,25 @@
+@import '../../variables';
+
+.button__wrapper {
+    @include centered;
+    gap: 20px;
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: blue;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.button:active {
+    background: rgb(6, 14, 131);
+}
+
+.button:disabled {
+    background: $gray_light;
+}

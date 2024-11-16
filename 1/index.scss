@@ -1,0 +1,43 @@
+@import '../normalize.css';
+@import '../mixins';
+@import './styles/button';
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    @include main;
+    padding: 20px;
+}
+
+.slide {
+    background: #fafafa;
+    min-width: 300px;
+    height: 400px;
+    border-radius: 16px;
+    box-shadow: 1px 5px 15px rgba(91, 91, 91, 0.5);
+    border: 1px solid rgb(224, 224, 224);
+    padding: 20px;
+    text-align: center;
+}
+
+.image {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.slider__wrapper {
+    overflow: hidden;
+    padding: 20px;
+}
+
+.slider__track {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    transition: 0.2s;
+    margin-bottom: 40px;
+}
