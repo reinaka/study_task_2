@@ -16,10 +16,6 @@
     font-weight: bolder;
 }
 
-.button:active {
-    background: rgb(6, 14, 131);
-}
-
 .button:disabled {
     background: $gray_light;
 }

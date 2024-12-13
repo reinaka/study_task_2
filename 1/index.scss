@@ -16,7 +16,7 @@ main {
     min-width: 300px;
     height: 400px;
     border-radius: 16px;
-    box-shadow: 1px 5px 15px rgba(91, 91, 91, 0.5);
+    box-shadow: 1px 5px 5px rgba(91, 91, 91, 0.5);
     border: 1px solid rgb(224, 224, 224);
     padding: 20px;
     text-align: center;
@@ -35,7 +35,6 @@ main {
 }
 
 .slider__wrapper {
-    overflow: hidden;
     padding: 20px;
 }
 
@@ -45,4 +44,10 @@ main {
     gap: 80px;
     transition: 0.2s;
     margin-bottom: 40px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    list-style: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 8px 8px;
 }
