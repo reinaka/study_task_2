@@ -88,3 +88,9 @@ main {
   scrollbar-width: none;
   padding: 8px 8px;
 }
+
+.slider__track::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0;
+  height: 0;
+}
